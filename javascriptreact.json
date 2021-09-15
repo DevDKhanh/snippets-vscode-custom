@@ -1,0 +1,16 @@
+{
+	"custom package dev react project": {
+		"prefix": "npm-run-react",
+		"body": [
+			"\"serverDev\": \"npm run dev --prefix server\",",
+			"\"client\": \"npm run start --prefix client\",",
+			"\"dev\": \"concurrently \\\"npm run serverDev\\\" \\\"npm run client\\\"\""
+		],
+		"description": "custom package dev react project"
+	},
+	"get state with const": {
+		"prefix": "rc-state",
+		"body": ["const {$1} = this.sate;"],
+		"description": "get state with const"
+	}
+}

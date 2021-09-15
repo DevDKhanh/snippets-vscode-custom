@@ -1,0 +1,34 @@
+{
+	"init main project": {
+		"prefix": "c++!",
+		"body": [
+			"#include <iostream>",
+			"#include <stdio.h>",
+			"",
+			"using namespace std;",
+			"",
+			"int main()",
+			"{",
+			"",
+			"    cout << endl;",
+			"    return 0;",
+			"}"
+		],
+		"description": "init main project"
+	},
+	"make class c++": {
+		"prefix": "cpp-class",
+		"body": [
+			"$LINE_COMMENT class ${1:className}",
+			"class ${1:className}",
+			"{",
+			"private:",
+			"",
+			"public:",
+			"    ${1:className}();",
+			"    ~${1:className}();",
+			"};"
+		],
+		"description": "make class c++"
+	}
+}

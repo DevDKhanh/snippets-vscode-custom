@@ -1,0 +1,57 @@
+{
+	"make html card img 1": {
+		"prefix": "card-img1",
+		"body": [
+		  "<div class=\"cards\">",
+		  "    <div class=\"card\">",
+		  "        <div class=\"context\">",
+		  "            <div class=\"card-img\">",
+		  "                <img src=\"$1\" alt=\"$2\"/>",
+		  "            </div>",
+		  "            <div class=\"card-title\">",
+		  "                ${3:Title card}",
+		  "            </div>",
+		  "            <div class=\"card-text\">",
+		  "                ${4:text card}",
+		  "            </div>",
+		  "        </div>",
+		  "    </div>",
+		  "</div>"
+		],
+		"description": "make html card img 1"
+	  },
+	  "make html header 1": {
+		"prefix": "header-1",
+		"body": [
+		  "<header>",
+		  "    <div class=\"header\">",
+		  "        <div class=\"header-logo\">",
+		  "            <img src=\"#\" alt=\"#\">",
+		  "        </div>",
+		  "        <div class=\"header-menu\">",
+		  "            <ul class=\"menu\">",
+		  "                <li class=\"menu-item\">",
+		  "                    <a href=\"#\" class=\"menu-link\">link 1</a>",
+		  "                </li>",
+		  "                <li class=\"menu-item\">",
+		  "                    <a href=\"#\" class=\"menu-link\">link 2</a>",
+		  "                </li>",
+		  "                <li class=\"menu-item\">",
+		  "                    <a href=\"#\" class=\"menu-link\">link 3</a>",
+		  "                </li>",
+		  "            </ul>",
+		  "        </div>",
+		  "        <div class=\"header-auth\">",
+		  "            <button class=\"btn\">",
+		  "                Login",
+		  "            </button>",
+		  "            <button class=\"btn\">",
+		  "                Register",
+		  "            </button>",
+		  "        </div>",
+		  "    </div>",
+		  "</header>"
+		],
+		"description": "make html header 1"
+	  },
+}
