@@ -1,0 +1,195 @@
+{
+	"make size icon": {
+		"prefix": "icon-size",
+		"body": [
+			"width: ${1:50px};",
+			"height: ${1:50px};",
+			"border-radius: 50%;"
+		],
+		"description": "make size icon"
+	},
+	"truncate text": {
+		"prefix": "text-truncate",
+		"body": [
+			"display:-webkit-box;",
+			"-webkit-line-clamp:${1:2};",
+			"-webkit-box-orient: vertical;",
+			"overflow: hidden;",
+			"text-overflow: ellipsis;",
+			"word-break: break-word;"
+		],
+		"description": "truncate text"
+	},
+	"custom tag a": {
+		"prefix": "a-custom",
+		"body": [
+			".${1:yourclass} > a {",
+			"    text-decoration: none;",
+			"    color: ${2:#000};",
+			"}",
+			"",
+			".${1:yourclass} > a:hover {",
+			"    text-decoration: none;",
+			"    color: ${2:#000};",
+			"}"
+		],
+		"description": "custom tag a"
+	},
+	"wide screen website": {
+		"prefix": "wide-f8",
+		"body": [
+			".grid {",
+			"    width: 100%;",
+			"    display: block;",
+			"    padding: 0;",
+			"}",
+			"",
+			".grid.wide {",
+			"    max-width: 1200px;",
+			"    margin: 0 auto;",
+			"}",
+			"",
+			"@media (min-width: 740px) and (max-width: 1023px) {",
+			"    .wide {",
+			"        width: 644px;",
+			"    }",
+			"}",
+			"",
+			"@media (min-width: 1024px) and (max-width: 1239px) {",
+			"    .wide {",
+			"        width: 984px;",
+			"    }",
+			"}"
+		],
+		"description": "wide screen website"
+	},
+	"make view point pc": {
+		"prefix": "@pc",
+		"body": ["@media (min-width: 1024px) {", "  $1", "}"],
+		"description": "make view point pc"
+	},
+	"make view point mobile": {
+		"prefix": "@mobile",
+		"body": ["@media (max-width: 740px) {", "  $1", "}"],
+		"description": "make view point max mobile"
+	},
+	"make view point mobile 2": {
+		"prefix": "@mobile-2",
+		"body": ["@media (max-width: 450px) {", "  $1", "}"],
+		"description": "make view point max mobile 2"
+	},
+	"make view point tablet": {
+		"prefix": "@tablet",
+		"body": [
+			"@media (min-width: 740px) and (max-width: 1023px) {",
+			"  $1",
+			"}"
+		],
+		"description": "make view point tablet"
+	},
+	"custom scss button": {
+		"prefix": "scss-btn",
+		"body": [
+			"@import '../../../sass/variables';",
+			"@import '../../../sass/mixin';",
+			"",
+			".btn + .btn {",
+			"    margin-left: 0.5rem;",
+			"}",
+			"",
+			".btn {",
+			"    font-family: Arial, Helvetica, sans-serif;",
+			"    display: inline-block;",
+			"    text-align: center;",
+			"    font-weight: 600;",
+			"    border: 0;",
+			"    width: auto;",
+			"    cursor: pointer;",
+			"    outline: none;",
+			"    font-size: 1rem;",
+			"    border-radius: 0.3rem;",
+			"    padding: 0.5rem 1rem;",
+			"",
+			"    &--md {",
+			"        padding: 0.6rem 1.3rem;",
+			"        font-size: 1.1rem;",
+			"    }",
+			"",
+			"    &--xl {",
+			"        padding: 0.7rem 1.5rem;",
+			"        font-size: 1.4rem;",
+			"    }",
+			"",
+			"    &--circle {",
+			"        border-radius: 2rem;",
+			"    }",
+			"",
+			"    &:hover {",
+			"        opacity: 0.8;",
+			"    }",
+			"",
+			"    &--primary {",
+			"        @include btnStyle(#fff, \\$color-primary);",
+			"    }",
+			"",
+			"    &--secondary {",
+			"        @include btnStyle(#fff, \\$color-secondary);",
+			"    }",
+			"",
+			"    &--danger {",
+			"        @include btnStyle(#fff, \\$color-danger);",
+			"    }",
+			"",
+			"    &--warning {",
+			"        @include btnStyle(#fff, \\$color-warning);",
+			"    }",
+			"",
+			"    &--success {",
+			"        @include btnStyle(#fff, \\$color-success);",
+			"    }",
+			"",
+			"    &--dark {",
+			"        @include btnStyle(#fff, \\$color-dark);",
+			"    }",
+			"",
+			"    &--light {",
+			"        @include btnStyle(#000, \\$color-light);",
+			"    }",
+			"",
+			"    &--pink {",
+			"        @include btnStyle(#fff, \\$color-pink);",
+			"    }",
+			"",
+			"    &--orange {",
+			"        @include btnStyle(#fff, \\$color-orange);",
+			"    }",
+			"}"
+		],
+		"description": "custom scss button"
+	},
+	"custom scss color": {
+		"prefix": "scss-color",
+		"body": [
+			"\\$color-primary: rgb(0, 68, 255);",
+			"\\$color-danger: rgb(241, 19, 56);",
+			"\\$color-secondary: rgb(107, 107, 107);",
+			"\\$color-warning: rgb(255, 166, 0);",
+			"\\$color-success: rgb(2, 231, 21);",
+			"\\$color-dark: rgb(0, 0, 0);",
+			"\\$color-light: rgb(236, 236, 236);",
+			"\\$color-pink: rgb(231, 2, 155);",
+			"\\$color-orange: rgb(255, 51, 0);"
+		],
+		"description": "custom scss color"
+	},
+	"custom scss mixin background color": {
+		"prefix": "scss-mixin-bg",
+		"body": [
+			"@mixin btnStyle(\\$color, \\$bg) {",
+			"    background-color: \\$bg;",
+			"    color: \\$color;",
+			"}"
+		],
+		"description": "custom scss mixin background color"
+	}
+}
